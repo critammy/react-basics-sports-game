@@ -88,7 +88,7 @@
                     score += 1
                     setTimeout(() => {
                         this.scoreSound.play()
-                    }, 100)
+                    }, 50)
                 }
 
                 this.setState((state, props) => ({
@@ -110,7 +110,7 @@
                 }
             return (
                     <div className='Team'>
-                        <img src={this.state.logo} width={100} alt={this.state.name} />
+                        <img src={this.state.logo} width={250} alt={this.state.name} />
                         <h2>{this.props.name}</h2>
                         <div>
                             <strong>Shots:</strong> {this.state.shotsTaken}
